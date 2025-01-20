@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Summarization App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Summarization App</h1>
+
+      <!-- Upload Section -->
+      <div id="upload-section">
+        <label for="image-upload" class="upload-label">
+          Drag & Drop or Click to Upload an Image
+        </label>
+        <input type="file" id="image-upload" accept="image/*" />
+      </div>
+
+      <div id="spinner" class="hidden">
+        <div class="spinner"></div>
+        <p>Processing your image...</p>
+      </div>
+
+      <!-- Preview Section -->
+      <div id="preview-section" class="hidden">
+        <h2>Uploaded Image</h2>
+        <img id="image-preview" alt="Uploaded Preview" />
+        <button id="summarize-btn">Generate Summary</button>
+      </div>
+
+      <!-- Result Section -->
+      <div id="result-section" class="hidden">
+        <h2>Summary</h2>
+        <p id="summary-text"></p>
+        <button id="restart-btn">Upload Another Image</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
